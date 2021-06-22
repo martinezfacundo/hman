@@ -4,13 +4,14 @@
     position: relative;
 
     .imagen-container {
+        position: absolute;
         display: grid;
         place-items: center;
         height: 100%;
+        margin-left: 50%;
 
         .imagen {
             width: 27vh;
-            margin-left: 12%;
         }
     }
 
@@ -23,13 +24,104 @@
         height: 100%;
 
         .nombre {
-            color: white;
+            z-index: 1;
+            color: rgb(224, 224, 224);
             writing-mode: vertical-rl;
             text-orientation: upright;
             letter-spacing: -3rem;
             font-size: calc(13vh + 3.5rem);
             font-family: $fuentePrincipal;
             margin: 0;
+        }
+    }
+
+    .navegacion {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: flex-end;
+        gap: 15rem;
+        z-index: 1;
+        padding: 3.5rem 7rem;
+
+        a {
+            color: rgb(224, 224, 224);
+            font-size: 1.4rem;
+            position: relative;
+
+            &::after { // efecto de las opciones del menu
+                content: "";
+                position: absolute;
+                background-color: rgb(224, 224, 224);
+                height: .2rem;
+                width: 0;
+                left: 0;
+                bottom: -.5rem;
+                transition: 0.3s;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+
+    .social-container {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        gap: 3rem;
+        height: 100%;
+        align-items: flex-end;
+        padding: 2rem 5rem;
+        z-index: 1;
+
+        a {
+            color: rgb(224, 224, 224);
+            font-size: 1.5rem;
+            position: relative;
+
+            &::after { // efecto de las opciones del menu
+                content: "";
+                position: absolute;
+                background-color: rgb(224, 224, 224);
+                height: .16rem;
+                width: 0;
+                left: 0;
+                bottom: 40%;
+                transition: 0.3s;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+
+    .texto-container {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .texto {
+            z-index: 1;
+            margin-top: 12%;
+            margin-left: 35%;
+            color: rgba($color: white, $alpha: .25);
+            font-style: italic;
+            font-size: calc(1.3vh + .2rem);
+        }
+    }
+    
+    .container-text {
+        position: absolute;
+
+        .container-text {
+            color: white;
+            position: relative;
         }
     }
 }
