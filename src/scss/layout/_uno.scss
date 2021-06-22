@@ -1,0 +1,35 @@
+#uno {
+    background-color: $negroFondo;
+    height: 100vh;
+    position: relative;
+
+    .imagen-container {
+        display: grid;
+        place-items: center;
+        height: 100%;
+
+        .imagen {
+            width: 27vh;
+            margin-left: 12%;
+        }
+    }
+
+    .nombre-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        .nombre {
+            color: white;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            letter-spacing: -3rem;
+            font-size: calc(13vh + 3.5rem);
+            font-family: $fuentePrincipal;
+            margin: 0;
+        }
+    }
+}
