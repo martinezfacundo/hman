@@ -1,33 +1,69 @@
-const angletoradian = (angle) => {
-    return angle * (Math.PI / 180)
+var uno = document.getElementById('uno')
+var dos = document.getElementById('dos')
+var tres = document.getElementById('tres')
+var cuatro = document.getElementById('cuatro')
+
+sobreUno = () => {
+    uno.classList.remove('uno')
+    uno.classList.add('incrementarUno')
+    tres.classList.remove('tres')
+    tres.classList.add('decrecerTres')
 }
 
-const radius = 100;
-const diameter = radius*2;
+fueraUno = () => {
+    uno.classList.remove('incrementarUno')
+    tres.classList.remove('decrecerTres')
+    uno.classList.add('uno')
+    tres.classList.add('tres')
+}
 
-const circle = document.getElementsByClassName('circular-text')[0]
+sobreDos = () => {
+    dos.classList.remove('dos')
+    dos.classList.add('incrementarDos')
+    cuatro.classList.remove('cuatro')
+    cuatro.classList.add('decrecerCuatro')
+}
 
-circle.style.width = `${diameter}px`;
-circle.style.height = `${diameter}px`;
+fueraDos = () => {
+    dos.classList.remove('incrementarDos')
+    cuatro.classList.remove('decrecerCuatro')
+    dos.classList.add('dos')
+    cuatro.classList.add('cuatro')
+}
 
-const text = circle.innerText;
-const characters = text.split('');
-circle.innerText = null;
+sobreTres = () => {
+    tres.classList.remove('tres')
+    tres.classList.add('incrementarTres')
+    uno.classList.remove('uno')
+    uno.classList.add('decrecerUno')
+}
 
-let angle = -90;
+fueraTres = () => {
+    tres.classList.remove('incrementarTres')
+    uno.classList.remove('decrecerUno')
+    tres.classList.add('tres')
+    uno.classList.add('uno')
+}
 
-const deltaAngle = 360/characters.length;
+sobreCuatro = () => {
+    cuatro.classList.remove('cuatro')
+    cuatro.classList.add('incrementarCuatro')
+    dos.classList.remove('dos')
+    dos.classList.add('decrecerDos')
+}
 
-characters.forEach((char,index) => {
-    const charElement = document.createElement('span');
-    charElement.innerText = char;
-    const xpos = radius * Math.cos(angletoradian(angle));
-    const ypos = radius * Math.sin(angletoradian(angle));
+fueraCuatro = () => {
+    cuatro.classList.remove('incrementarCuatro')
+    dos.classList.remove('decrecerDos')
+    cuatro.classList.add('cuatro')
+    dos.classList.add('dos')
+}
 
-    const transform = `translate(${xpos}px, ${ypos}px)`;
-    const rotate = `rotate(${index * deltaAngle}deg)`;
-    charElement.style.transform = `${transform} ${rotate}`;
-
-    angle += deltaAngle;
-    circle.appendChild(charElement);
-});
+uno.addEventListener('mouseover',sobreUno)
+uno.addEventListener('mouseleave',fueraUno)
+dos.addEventListener('mouseover',sobreDos)
+dos.addEventListener('mouseleave',fueraDos)
+tres.addEventListener('mouseover',sobreTres)
+tres.addEventListener('mouseleave',fueraTres)
+cuatro.addEventListener('mouseover',sobreCuatro)
+cuatro.addEventListener('mouseleave',fueraCuatro)

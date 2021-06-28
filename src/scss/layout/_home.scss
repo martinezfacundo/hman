@@ -1,4 +1,4 @@
-#uno {
+#home {
     background-color: $negroFondo;
     height: 100vh;
     position: relative;
@@ -8,14 +8,14 @@
         display: grid;
         place-items: center;
         height: 100%;
-        margin-left: 50%;
+        margin-left: 50vw;
 
         .imagen {
-            width: 27vh;
+            width: 13vw;
         }
     }
 
-    .nombre-container {
+    .container-titulo-uno {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -23,13 +23,14 @@
         width: 100%;
         height: 100%;
 
-        .nombre {
+        .titulo-uno {
             z-index: 1;
-            color: rgb(224, 224, 224);
+            color: $colorFuente;
             writing-mode: vertical-rl;
             text-orientation: upright;
-            letter-spacing: -3rem;
-            font-size: calc(13vh + 3.5rem);
+            letter-spacing: -2vw;
+            -webkit-letter-spacing: -3vh;
+            font-size: calc(8vw + 1.5rem);
             font-family: $fuentePrincipal;
             margin: 0;
         }
@@ -40,23 +41,23 @@
         position: absolute;
         display: flex;
         justify-content: flex-end;
-        gap: 15rem;
         z-index: 1;
-        padding: 3.5rem 7rem;
+        padding: 3.5vh 3.5vw;
 
         a {
-            color: rgb(224, 224, 224);
-            font-size: 1.4rem;
+            color: $colorFuente;
+            font-size: calc(.5vw + .55rem);
             position: relative;
+            margin-left: 7.5vw;
 
             &::after { // efecto de las opciones del menu
                 content: "";
                 position: absolute;
-                background-color: rgb(224, 224, 224);
-                height: .2rem;
+                background-color: $colorFuente;
+                height: .1vh;
                 width: 0;
                 left: 0;
-                bottom: -.5rem;
+                bottom: -.7vh;
                 transition: 0.3s;
             }
 
@@ -70,25 +71,25 @@
         position: absolute;
         width: 100%;
         display: flex;
-        gap: 3rem;
         height: 100%;
         align-items: flex-end;
-        padding: 2rem 5rem;
+        padding: 2vh 2.7vw;
         z-index: 1;
 
         a {
-            color: rgb(224, 224, 224);
-            font-size: 1.5rem;
+            color: $colorFuente;
+            font-size: calc(.5vw + .5rem);
             position: relative;
+            margin-right: 4vw;
 
             &::after { // efecto de las opciones del menu
                 content: "";
                 position: absolute;
-                background-color: rgb(224, 224, 224);
-                height: .16rem;
+                background-color: $colorFuente;
+                height: .1vh;
                 width: 0;
                 left: 0;
-                bottom: 40%;
+                bottom: .7vh;
                 transition: 0.3s;
             }
 
@@ -108,20 +109,11 @@
 
         .texto {
             z-index: 1;
-            margin-top: 12%;
-            margin-left: 35%;
+            margin-top: 22vh;
+            margin-left: 35vw;
             color: rgba($color: white, $alpha: .25);
             font-style: italic;
-            font-size: calc(1.3vh + .2rem);
-        }
-    }
-    
-    .container-text {
-        position: absolute;
-
-        .container-text {
-            color: white;
-            position: relative;
+            font-size: calc(.6vw + .2rem);
         }
     }
 }

@@ -1,0 +1,84 @@
+#about {
+    background-color: $negroFondo;
+    height: 100vh;
+    position: relative;
+
+    .container-titulo-dos {
+        height: 100%;
+        width: 100%;
+
+        .titulo-dos {
+            padding-top: 9vh;
+            padding-left: 6vw;
+            position: absolute;
+            color: $colorFuente;
+            margin: 0;
+            font-family: $fuentePrincipal;
+            font-weight: 700;
+            font-size: 7vw;
+    
+            span {
+                font-weight: 200;
+            }
+        }
+    }
+
+    .container-texto-nosotros {
+        position: absolute;
+        color: $colorFuente;
+        margin-left: 6vw;
+        margin-top: 55vh;
+        display: flex;
+        align-items: center;
+
+        .about-us {
+            color: $colorFuente;
+            font-family: $fuentePrincipal;
+            font-size: calc(1vw + .3rem);
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            margin-right: 1.5vw;
+            transform: rotate(180deg);
+            letter-spacing: .5vw;
+            font-weight: 100;
+            color: white;
+        }
+
+        .texto-nosotros {
+            color: $colorFuente;
+            font-family: $fuenteItalica;
+            font-weight: 400;
+            font-size: calc(.8vw + .2rem);
+            font-style: italic;
+            line-height: 3vh;
+        }
+    }
+
+    .imagen-about {
+        position: absolute;
+        background-image: url('/build/img/img-about.jpeg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 50vw;
+        right: 0;
+        filter: grayscale(100%);
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -ms-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        clip-path: polygon(100% 0, 0 100%, 100% 100%);
+        -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+
+        &:hover {
+            filter: grayscale(0%);
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            -ms-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+        }
+    }
+}

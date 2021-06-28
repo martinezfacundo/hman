@@ -1,0 +1,245 @@
+#content {
+    height: 100vh;
+    background-color: $negroFondo;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+    .contenedor-titulo {
+        width: 100%;
+        height: 100%;
+
+        .titulo-tres {
+            position: absolute;
+            right: 5vw;
+            top: 12vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            color: $colorFuente;
+            font-family: $fuentePrincipal;
+            font-size: calc(6vw + .5rem);
+            font-weight: 100;
+
+            .bold {
+                font-family: $fuentePrincipal;
+                font-weight: 900;
+
+                &:hover {
+                    color: #e8412e;
+                }
+            }
+        }
+    }
+
+    .contenedor-imagenes-tres {
+        width: 100%;
+        height: 100%;
+
+        a {
+            text-decoration: none;
+            color: $colorFuente;
+            font-family: $fuentePrincipal;
+            font-size: calc(1.5vw + .2rem);
+            font-weight: 200;
+        }
+
+        .imagen {
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            -ms-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+
+            &:hover {
+                -webkit-transition: all .3s;
+                -moz-transition: all .3s;
+                -ms-transition: all .3s;
+                -o-transition: all .3s;
+                transition: all .3s;
+                font-size: calc(1.2vw + .2rem);
+            }
+            
+            .texto-content {
+                backdrop-filter: blur(5px) grayscale(100%);
+                -webkit-backdrop-filter: grayscale(100%) blur(5px);
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                -webkit-transition: all .3s;
+                -moz-transition: all .3s;
+                -ms-transition: all .3s;
+                -o-transition: all .3s;
+                transition: all .3s;
+
+                h3 {
+                    font-family: $fuentePrincipal;
+                    font-weight: 900;
+                    color: $colorFuente;
+                    -webkit-transition: all .3s;
+                    -moz-transition: all .3s;
+                    -ms-transition: all .3s;
+                    -o-transition: all .3s;
+                    transition: all .3s;
+                }
+
+                &:hover {
+                    backdrop-filter: blur(0px) grayscale(0%);
+                    -webkit-backdrop-filter: grayscale(0%) blur(0px);
+                    -webkit-transition: all .3s;
+                    -moz-transition: all .3s;
+                    -ms-transition: all .3s;
+                    -o-transition: all .3s;
+                    transition: all .3s;
+
+                    h3 {
+                        transform: translateY(37.5vh);
+                        font-weight: 200;
+                        -webkit-transition: all .3s;
+                        -moz-transition: all .3s;
+                        -ms-transition: all .3s;
+                        -o-transition: all .3s;
+                        transition: all .3s;
+                    }
+
+                    .down {
+                        transform: translateY(41vh);
+                        font-weight: 200;
+                        -webkit-transition: all .3s;
+                        -moz-transition: all .3s;
+                        -ms-transition: all .3s;
+                        -o-transition: all .3s;
+                        transition: all .3s;
+                    }
+                }
+            }
+        }
+
+        .uno {
+            background-image: url('/build/img/img-art.jpeg');
+            position: absolute;
+            z-index: 1;
+            width: 25vw;
+            height: 40vh;
+            top: 9vh;
+            left: 7vw;
+        }
+
+        .dos {
+            background-image: url('/build/img/img-fashion.webp');
+            position: absolute;
+            z-index: 1;
+            width: 25vw;
+            height: 40vh;
+            top: 9vh;
+            left: 33vw;
+        }
+
+        .tres {
+            background-image: url('/build/img/img-elegance.jpeg');
+            position: absolute;
+            z-index: 1;
+            width: 25vw;
+            height: 40vh;
+            left: 7vw;
+            top: 51vh;
+        }
+
+        .cuatro {
+            background-image: url('/build/img/img-passion.webp');
+            position: absolute;
+            z-index: 1;
+            width: 25vw;
+            height: 40vh;
+            left: 33vw;
+            top: 51vh;
+        }
+        
+        .incrementarUno {
+            background-image: url('/build/img/img-art.jpeg');
+            position: absolute;
+            z-index: 1;
+            width: 25vw;
+            height: 68vh;
+            top: 9vh;
+            left: 7vw;
+        }
+
+        .incrementarDos {
+            background-image: url('/build/img/img-fashion.webp');
+            position: absolute;
+            z-index: 1;
+            width: 25vw;
+            height: 68vh;
+            top: 9vh;
+            left: 33vw;
+        }
+
+        .incrementarTres {
+            background-image: url('/build/img/img-elegance.jpeg');
+            position: absolute;
+            z-index: 1;
+            width: 25vw;
+            height: 75vh;
+            left: 7vw;
+            top: 16vh;
+        }
+
+        .incrementarCuatro {
+            background-image: url('/build/img/img-passion.webp');
+            position: absolute;
+            z-index: 1;
+            width: 25vw;
+            height: 75vh;
+            left: 33vw;
+            top: 16vh;
+        }
+
+        .decrecerUno {
+            background-image: url('/build/img/img-art.jpeg');
+            position: absolute;
+            z-index: 1;
+            width: 25vw;
+            height: 5vh;
+            top: 9vh;
+            left: 4vw;
+        }
+
+        .decrecerDos {
+            background-image: url('/build/img/img-fashion.webp');
+            position: absolute;
+            z-index: 1;
+            width: 25vw;
+            height: 5vh;
+            top: 9vh;
+            left: 36vw;
+        }
+
+        .decrecerTres {
+            background-image: url('/build/img/img-elegance.jpeg');
+            position: absolute;
+            z-index: 1;
+            width: 25vw;
+            height: 5vh;
+            left: 4vw;
+            top: 84vh;
+        }
+
+        .decrecerCuatro {
+            background-image: url('/build/img/img-passion.webp');
+            position: absolute;
+            z-index: 1;
+            width: 25vw;
+            height: 5vh;
+            left: 36vw;
+            top: 84vh;
+        }
+    }
+}
+
