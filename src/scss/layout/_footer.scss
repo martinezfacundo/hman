@@ -1,0 +1,89 @@
+#footer {
+    background-color: rgb(19, 19, 19);
+    height: 25vh;
+    
+    .contenedor-footer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .linea {
+            background-color: $colorFuente;
+            width: 93%;
+            height: .1vh;
+            margin: 0 auto;
+            margin-bottom: 1.5vh;
+            margin-top: 1vh;
+        }
+
+        .abajo-linea {
+            width: 85%;
+            height: 20%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .derechos {
+                color: $colorFuente;
+                font-family: $fuentePrincipal;
+                font-size: calc(.6vw + .1rem);
+            }
+
+            .faq {
+                display: flex;
+                gap: 1vw;
+
+                a {
+                    color: $colorFuente;
+                    font-family: $fuentePrincipal;
+                    font-size: calc(.6vw + .1rem);
+                    font-weight: 200;
+                }
+            }
+        }
+
+        .arriba-linea {
+            width: 85%;
+            height: 60%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .publico {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                h4 {
+                    color: $colorFuente;
+                    font-family: $fuentePrincipal;
+                    font-size: calc(.6vw + .1rem);
+                    font-weight: 900;
+                    padding-bottom: 1vh;
+                }
+
+                a {
+                    color: $colorFuente;
+                    font-family: $fuentePrincipal;
+                    font-size: calc(.6vw + .1rem);
+                    font-weight: 200;
+                    padding-bottom: .6vh;
+                }
+            }
+
+            .social-footer {
+                display: flex;
+                gap: 1vw;
+                align-items: center;
+                justify-content: space-between;
+
+                img {
+                    width: 1vw;
+                }
+            }
+        }
+    }
+}

@@ -2,6 +2,8 @@ var uno = document.getElementById('uno')
 var dos = document.getElementById('dos')
 var tres = document.getElementById('tres')
 var cuatro = document.getElementById('cuatro')
+var contact = document.getElementById('contact')
+var botonContact = document.getElementsByClassName('yes')[0]
 
 sobreUno = () => {
     uno.classList.remove('uno')
@@ -59,6 +61,15 @@ fueraCuatro = () => {
     dos.classList.add('dos')
 }
 
+agrandarContact = () => {
+    contact.style.height = '80vh'
+    botonContact.style.display = 'none'
+}
+
+achicarContact = () => {
+
+}
+
 uno.addEventListener('mouseover',sobreUno)
 uno.addEventListener('mouseleave',fueraUno)
 dos.addEventListener('mouseover',sobreDos)
@@ -67,3 +78,4 @@ tres.addEventListener('mouseover',sobreTres)
 tres.addEventListener('mouseleave',fueraTres)
 cuatro.addEventListener('mouseover',sobreCuatro)
 cuatro.addEventListener('mouseleave',fueraCuatro)
+botonContact.addEventListener('click',agrandarContact)

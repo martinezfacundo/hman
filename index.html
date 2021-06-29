@@ -9,11 +9,6 @@
 </head>
 <body>
     <div id="home">
-        <div class="social-container">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
         <nav class="navegacion">
             <a href="#about">ABOUT US</a>
             <a href="#content">CONTENT</a>
@@ -54,7 +49,7 @@
     </div>
     <div id="content">
         <div class="contenedor-titulo">
-            <h1 class="titulo-tres"><span class="bold">SEE</span> SOME <span>OF</span><span class="bold">OUR</span><span class="bold">WORKS.</span></h1>
+            <h1 class="titulo-tres"><span class="bold">SEE</span> SOME <span>OF</span><span class="bold">OUR</span><span class="bold">WORK.</span></h1>
         </div>
         <div class="contenedor-imagenes-tres">
             <a href="#content">  
@@ -80,8 +75,58 @@
         </div>
     </div>
     <div id="contact">
-
+        <div class="linea-contact"></div>
+        <div class="contenedor-formulario">
+            <form class="formulario">
+                <h1>CONTACT</h1>
+                <div class="grupo">
+                    <label for="">NAME</label>
+                    <input type="text" name="" id="name" required><span class="barra"></span>
+                </div>
+                <div class="grupo">
+                    <label for="">SURNAME</label>
+                    <input type="text" name="" id="surname" required><span class="barra"></span>
+                </div>
+                <div class="grupo">
+                    <label for="">EMAIL</label>
+                    <input type="email" name="" id="email" required><span class="barra"></span>
+                </div>
+                <button type="submit">ENVIAR</button>
+            </form>
+        </div>
+        <div class="contenedor-titulo-contact">
+            <h1 class="mensaje-contact" id="h1">Wanna say something to us?</h1>
+            <button class="yes">Yes</button>
+        </div>
     </div>
+    <footer id="footer">
+        <div class="contenedor-footer">
+            <div class="arriba-linea">
+                <div class="publico">
+                    <h4>ACERCA DE HMAN</h4>
+                    <a href="#footer">Noticias</a>
+                    <a href="#footer">Empleo</a>
+                    <a href="#footer">Inversores</a>
+                    <a href="#footer">Sustentabilidad</a>
+                </div>
+                <div class="social-footer">
+                    <a href="#footer"><img src="/build/img/email.png" alt="email"></a>
+                    <a href="#footer"><img src="/build/img/logotipo-de-instagram.png" alt="ig"></a>
+                    <a href="#footer"><img src="/build/img/simbolo-de-la-aplicacion-de-facebook.png" alt="fb"></a>
+                </div>
+            </div>
+            <div class="linea"></div>
+            <div class="abajo-linea">
+                <div class="derechos">
+                    <h4>© 2021 Facundo Martinez. Todos los derechos reservados.</h4>
+                </div>
+                <div class="faq">
+                    <a href="#footer">Terminos de uso</a>
+                    <a href="#footer">Politica de privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="/build/js/bundle.js"></script>
 </body>
 </html>
